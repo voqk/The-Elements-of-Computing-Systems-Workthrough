@@ -1,6 +1,6 @@
 # Elements of Computing Systems
 
-My work as a read through this awesome book.
+My work as I read through this awesome book.
 
 ## Chapter 1
 
