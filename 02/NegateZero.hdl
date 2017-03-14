@@ -1,0 +1,12 @@
+CHIP NegateZero {
+    IN
+        in[16], // 16-bit input
+        z, // zero the input
+        n; // negate the input
+    OUT
+        out[16];
+    PARTS:
+        Mux16(a=in, b=false, sel=z, out=pin1);
+        Not16(in=pin1, out=negated);
+        Mux16(a=pin1, b=negated, sel=n, out=out);
+}
